@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+    <link rel="stylesheet" href="../styles/anket_style.css">
+    <script>
+        const dayButtons = document.querySelectorAll(".swipe-time");
+
+        dayButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                button.classList.toggle("selected");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="swipe-main">
+        <div class="swipe-header">
+            <a href="/">
+                <img style="object-fit: cover; height: 70%; width: 200px; padding-top: 10px;"
+                    src="../icons/oggetto_coffee.png">
+            </a>
+        </div>
+        <div class="swipe-page">
+            <div class="swipe-yellow-place">
+                <div class="swipe-yellow">
+                    <div class="swipe-photo">
+                        <img style="margin: auto; object-fit: cover; margin: 20px; height: 80%; width: 90%; border-radius: 10px;"
+                            src="../icons/empty.jpg">
+                        <input style="margin: auto;" type="file">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="swipe-white-place">
+                <div class="swipe-white">
+                    <div class="swipe-anket">
+                        <div class="swipe-blanck">
+                            <p class="swipe-little-text" style="font-family: Montserrat bold;">*Имя</p>
+                            <input class="swipe-large-text" style="font-family: Montserrat bold;" type="text" />
+                        </div>
+                        <div class="swipe-blanck">
+                            <p class="swipe-little-text">*Специальность</p>
+                            <input class="swipe-large-text" type="text" />
+                        </div>
+                        <div class="swipe-blanck">
+                            <p class="swipe-little-text">*Интересы</p>
+                            <input class="swipe-large-text" type="text" />
+                        </div>
+                        <div class="swipe-blanck">
+                            <p class="swipe-little-text">*Предпочтения(совпадения)</p>
+                            <div class="swipe-place-time">
+                                <div style="display: flex; flex-direction: row;">
+                                    <button class="swipe-time" id="monday" value="monday">Пн</button>
+                                    <button class="swipe-time" id="tuesday" value="tuesday">Вт</button>
+                                    <button class="swipe-time" id="wednesday" value="wednesday">Ср</button>
+                                    <button class="swipe-time" id="thursday" value="thursday">Чт</button>
+                                    <button class="swipe-time" id="friday" value="friday">Пт</button>
+                                    <button class="swipe-time" id="saturday" value="saturday">Сб</button>
+                                    <button class="swipe-time" id="sunday" value="sunday">Вс</button>
+
+                                </div>
+                                <select name="select" class="swipe-time" style="background-color: #ffdf00; border: none; height: 60%;">
+                                    <!--Supplement an id here instead of using 'name'-->
+                                    <option value="value1">Онлайн</option>
+                                    <option value="value2" selected>Оффлайн</option>
+                                    <option value="value3">Оффлайн(офис)</option>
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-place">
+                        <button style="visibility: hidden;">Отказаться от встречи</button>
+                        <button style="background-color: #ffdf00;">
+                            Сохранить изменения
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>
