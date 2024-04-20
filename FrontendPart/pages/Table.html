@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+    <link rel="stylesheet" href="../styles/table_style.css">
+    <script>
+        const dayButtons = document.querySelectorAll(".swipe-time");
+
+        dayButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                button.classList.toggle("selected");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="swipe-main">
+        <div class="swipe-header">
+            <a href="/">
+                <img style="object-fit: cover; height: 70%; width: 200px; padding-top: 10px;"
+                    src="../icons/oggetto_coffee.png">
+            </a>
+        </div>
+        <div class="swipe-page">
+            <div class="swipe-yellow-place">
+                <div class="swipe-yellow">
+                    <div class="swipe-photo">
+                        <img style="margin: auto; object-fit: cover; margin: 20px; height: 100%;border-radius: 10px;"
+                            src="../icons/lamp.png">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="swipe-white-place">
+                <div class="swipe-white">
+                    <div class="swipe-anket">
+                        <p class="swipe-little-text">*Предпочтения по времени и типу встречи</p>
+                        <div class="swipe-place-time" style="margin-bottom: 30px; height: 60xp;">
+                            <div style="display: flex; flex-direction: row;">
+                                <button class="swipe-time" id="monday" value="monday">Пн</button>
+                                <button class="swipe-time" id="tuesday" value="tuesday">Вт</button>
+                                <button class="swipe-time" id="wednesday" value="wednesday">Ср</button>
+                                <button class="swipe-time" id="thursday" value="thursday">Чт</button>
+                                <button class="swipe-time" id="friday" value="friday">Пт</button>
+                                <button class="swipe-time" id="saturday" value="saturday">Сб</button>
+                                <button class="swipe-time" id="sunday" value="sunday">Вс</button>
+
+                            </div>
+
+                        </div>
+                        <div class="swipe-place-time" style="height: 60xp;">
+
+                            <select name="select" class="swipe-time"
+                                style="background-color: #ffdf00; border: none; height: 60%; outline: none; -moz-appearance: none;
+                                -webkit-appearance: none;">
+                                <!--Supplement an id here instead of using 'name'-->
+                                <option value="value1">Онлайн</option>
+                                <option value="value2" selected>Оффлайн</option>
+                                <option value="value3">Оффлайн(офис)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-place">
+                    <button style="visibility: hidden;">Отказаться от встречи</button>
+                    <button style="background-color: #ffdf00;">
+                        Сохранить изменения
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>
