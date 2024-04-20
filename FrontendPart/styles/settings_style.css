@@ -4,7 +4,6 @@ body {
     line-height: 20px;
     background-color: #f6f7f8;
     margin: 0;
-
 }
 
 .settings-main {
@@ -31,33 +30,74 @@ body {
 .settings-title {
     font-family: Montserrat bold;
     text-align: left;
+    margin: 50px 0;
     margin-left: 100px;
-    margin-bottom: 26px;
     font-size: 30px;
+    color: #333333;
 }
 
-.settings-block{
+.settings-block {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.settings-photo{
+.settings-left {
     display: flex;
-    flex: 0.4;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.settings-photo {
+    display: flex;
+    flex: 0.3;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    height: 100px;
 }
-.settings-list{
-    flex: 0.6;
-    background-color: lightgray;
+
+.settings-list {
+    flex: 0.7;
+    background-color: #eaeced;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+
+.settings-list-object {
+    padding: 24px;
+    border-bottom: 0.5px solid gray;
+}
+
+.settings-list-object-text {
+    font-family: Montserrat;
+}
+
+.settings-exit {
+    display: flex;
+    justify-content: right;
+}
+
+.settings-button {
+    background-color: #ffdf00;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
 }
 
 @font-face {
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat-Regular.ttf);
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat bold';
+    src: url(../fonts/Montserrat-SemiBold.ttf);
 }
 
 @font-face {
