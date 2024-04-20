@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "express": "^4.19.1",
+    "liquidjs": "^10.10.2",
+    "nodemon": "^3.1.0"
+  },
+  "name": "lab2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

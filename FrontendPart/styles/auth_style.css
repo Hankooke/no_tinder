@@ -1,0 +1,117 @@
+body {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #f6f7f8;
+    margin: 0;
+
+}
+
+.auth-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.auth-header {
+    display: flex;
+    padding: 0 50px;
+    height: 96px;
+    text-align: left;
+    background-color: white;
+}
+
+.auth-form {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    width: 515px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.auth-title {
+    font-family: Montserrat bold;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.auth-dop {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    flex: 0.7;
+    margin-left: auto;
+    width: 400px;
+    margin-right: auto;
+}
+
+.auth-send {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: none;
+    height: 95px;
+}
+
+.auth-text-send {
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+.auth-place {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.auth-input {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.auth-button {
+    width: 74px;
+    background-color: #ffdf00;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.auth-button-admin {
+    width: 74px;
+    background-color: #ffdf00;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.auth-link{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat bold';
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+

@@ -1,0 +1,66 @@
+body {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #f6f7f8;
+    margin: 0;
+
+}
+
+.settings-main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.settings-header {
+    display: flex;
+    padding: 0 50px;
+    height: 96px;
+    text-align: left;
+    background-color: white;
+}
+
+.settings-page {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    border-radius: 10px;
+}
+
+.settings-title {
+    font-family: Montserrat bold;
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 26px;
+    font-size: 30px;
+}
+
+.settings-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.settings-photo{
+    display: flex;
+    flex: 0.4;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.settings-list{
+    flex: 0.6;
+    background-color: lightgray;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat bold';
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
