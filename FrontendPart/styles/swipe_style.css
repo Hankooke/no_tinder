@@ -6,17 +6,10 @@ body {
     margin: 0;
 }
 
-.swipe-header {
-    display: flex;
-    padding: 0 50px;
-    height: 96px;
-    text-align: left;
-    background-color: white;
-}
 
 .swipe-page {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     margin: auto auto;
     height: 70vh;
     width: 130vh;
@@ -52,9 +45,7 @@ body {
 
 .swipe-white {
     display: flex;
-    flex: 0.65;
     flex-direction: column;
-    height: 80%;
     justify-content: space-between;
 }
 
@@ -78,6 +69,9 @@ body {
 .button-place {
     display: flex;
     flex-direction: row;
+    padding: 5px;
+    padding-left: 20px;
+    padding-top: 20px;
     justify-content: space-around;
 }
 
@@ -104,7 +98,8 @@ button {
     font-size: 16px;
     line-height: normal;
 }
-.swipe-place-time{
+
+.swipe-place-time {
     display: flex;
     background-color: white;
     border-radius: 10px;
@@ -114,12 +109,15 @@ button {
     padding: 0 10px;
 }
 
-.swipe-time{
+.swipe-time {
     background-color: #eaeced;
     padding: 10px;
+    margin: 5px;
     margin-right: 10px;
     border-radius: 10px;
 }
+
+
 
 @font-face {
     font-family: 'Montserrat';
@@ -135,4 +133,21 @@ button {
 @font-face {
     font-family: 'Montserrat bold';
     src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .swipe-page {
+        grid-template-columns: 1fr;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .swipe-yellow-place {
+        margin-left: 0;
+    }
+
+    .swipe-white-place {
+        margin: 0;
+    }
 }

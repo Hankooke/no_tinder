@@ -6,59 +6,49 @@ body {
     margin: 0;
 }
 
-.swipe-header {
-    display: flex;
-    padding: 0 50px;
-    height: 96px;
-    text-align: left;
-    background-color: white;
-}
-
-.swipe-page {
-    display: flex;
-    flex-direction: row;
+.anket-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     margin: auto auto;
     height: 70vh;
-    width: 130vh;
+    width: 74vw;
     border-radius: 0 0 10px 10px;
     background-color: #eaeced;
 }
 
-.swipe-main {
+.anket-main {
     display: flex;
     flex-direction: column;
 }
 
-.swipe-yellow-place {
+.anket-yellow-place {
     justify-content: space-between;
     margin-left: 30px;
-    flex: 0.35;
+    grid-column: 1 / 2;
     height: 80vh;
 }
 
-.swipe-yellow {
+.anket-yellow {
     height: 80%;
     border-radius: 0 0 20px 20px;
     background-color: #ffdf00;
 }
 
-.swipe-white-place {
+.anket-white-place {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 30px;
-    flex: 0.65;
+    grid-column: 2 / 3;
     height: 80vh;
 }
 
-.swipe-white {
+.anket-white {
     display: flex;
-    flex: 0.65;
     flex-direction: column;
-    height: 80%;
     justify-content: space-between;
 }
 
-.swipe-photo {
+.anket-photo {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -67,7 +57,7 @@ body {
     padding-top: 10px;
 }
 
-.swipe-anket {
+.anket-anket {
     margin: auto 0;
     padding-left: 20px;
     display: flex;
@@ -91,22 +81,22 @@ button {
     font-size: 12px;
 }
 
-.swipe-blanck {
+.anket-blanck {
     justify-content: center;
 }
 
-.swipe-little-text {
+.anket-little-text {
     color: grey;
     font-size: 12px;
     line-height: normal;
 }
 
-.swipe-large-text {
+.anket-large-text {
     font-size: 16px;
     line-height: normal;
 }
 
-.swipe-place-time {
+.anket-place-time {
     display: flex;
     background-color: white;
     border-radius: 10px;
@@ -116,7 +106,7 @@ button {
     padding: 0 10px;
 }
 
-.swipe-time {
+.anket-time {
     background-color: #eaeced;
     padding: 10px;
     margin-right: 10px;
@@ -134,12 +124,13 @@ input {
     width: 80%;
 }
 
-.swipe-time:selected {
+.anket-time:selected {
     background-color: #ffdf00;
     padding: 10px;
     margin-right: 10px;
     border-radius: 10px;
-  }
+}
+
 
 @font-face {
     font-family: 'Montserrat';
@@ -155,4 +146,21 @@ input {
 @font-face {
     font-family: 'Montserrat bold';
     src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .anket-page {
+        grid-template-columns: 1fr;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .anket-yellow-place {
+        margin-left: 0;
+    }
+
+    .anket-white-place {
+        margin: 0;
+    }
 }

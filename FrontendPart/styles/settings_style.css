@@ -12,14 +12,6 @@ body {
     height: 100vh;
 }
 
-.settings-header {
-    display: flex;
-    padding: 0 50px;
-    height: 96px;
-    text-align: left;
-    background-color: white;
-}
-
 .settings-page {
     display: flex;
     flex-direction: column;
@@ -87,6 +79,17 @@ body {
     border: none;
     padding: 10px 30px;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .settings-block {
+        flex-direction: column;
+        margin: 0 30px;
+    }
+
+    .settings-left {
+        margin-bottom: 20px;
+    }
 }
 
 @font-face {

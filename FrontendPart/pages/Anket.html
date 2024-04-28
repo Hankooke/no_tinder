@@ -7,8 +7,9 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
     <link rel="stylesheet" href="../styles/anket_style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <script>
-        const dayButtons = document.querySelectorAll(".swipe-time");
+        const dayButtons = document.querySelectorAll(".anket-time");
 
         dayButtons.forEach((button) => {
             button.addEventListener("click", () => {
@@ -19,17 +20,26 @@
 </head>
 
 <body>
-    <div class="swipe-main">
-        <div class="swipe-header">
-            <a href="/">
-                <img style="object-fit: cover; height: 70%; width: 200px; padding-top: 10px;"
-                    src="../icons/oggetto_coffee.png">
-            </a>
+    <div class="anket-main">
+        <div class="def-header">
+            <div class="def-header-logo">
+                <a href="../pages/Main.html">
+                    <img style="object-fit: cover; height: 70%; width: 200px; padding-top: 10px;"
+                        src="../icons/oggetto_coffee.png">
+                </a>
+            </div>
+            <div class="def-header-nav">
+                <a class="def-header-link" href="../pages/Main.html">Домашняя страница</a>
+                <a class="def-header-link" href="../pages/Swipe.html">Подбор встреч</a>
+            </div>
+            <div class="def-header-profile">
+                <a class="def-header-link" href="../pages/Settings.html">Профиль</a>
+            </div>
         </div>
-        <div class="swipe-page">
-            <div class="swipe-yellow-place">
-                <div class="swipe-yellow">
-                    <div class="swipe-photo">
+        <div class="anket-page">
+            <div class="anket-yellow-place">
+                <div class="anket-yellow">
+                    <div class="anket-photo">
                         <img style="margin: auto; object-fit: cover; height: 80%; width: 90%; border-radius: 10px;"
                             src="../icons/empty.jpg">
                         <input style="margin: auto;" type="file">
@@ -38,35 +48,35 @@
                 </div>
 
             </div>
-            <div class="swipe-white-place">
-                <div class="swipe-white">
-                    <div class="swipe-anket">
-                        <div class="swipe-blanck">
-                            <p class="swipe-little-text" style="font-family: Montserrat bold;">*Имя</p>
-                            <input class="swipe-large-text" style="font-family: Montserrat bold;" type="text" />
+            <div class="anket-white-place">
+                <div class="anket-white">
+                    <div class="anket-anket">
+                        <div class="anket-blanck">
+                            <p class="anket-little-text" style="font-family: Montserrat bold;">*Имя</p>
+                            <input class="anket-large-text" style="font-family: Montserrat bold;" type="text" />
                         </div>
-                        <div class="swipe-blanck">
-                            <p class="swipe-little-text">*Специальность</p>
-                            <input class="swipe-large-text" type="text" />
+                        <div class="anket-blanck">
+                            <p class="anket-little-text">*Специальность</p>
+                            <input class="anket-large-text" type="text" />
                         </div>
-                        <div class="swipe-blanck">
-                            <p class="swipe-little-text">*Интересы</p>
-                            <input class="swipe-large-text" type="text" />
+                        <div class="anket-blanck">
+                            <p class="anket-little-text">*Интересы</p>
+                            <input class="anket-large-text" type="text" />
                         </div>
-                        <div class="swipe-blanck">
-                            <p class="swipe-little-text">*Предпочтения(совпадения)</p>
-                            <div class="swipe-place-time">
+                        <div class="anket-blanck" style="visibility: hidden;">
+                            <p class="anket-little-text">*Предпочтения(совпадения)</p>
+                            <div class="anket-place-time">
                                 <div style="display: flex; flex-direction: row;">
-                                    <button class="swipe-time" id="monday" value="monday">Пн</button>
-                                    <button class="swipe-time" id="tuesday" value="tuesday">Вт</button>
-                                    <button class="swipe-time" id="wednesday" value="wednesday">Ср</button>
-                                    <button class="swipe-time" id="thursday" value="thursday">Чт</button>
-                                    <button class="swipe-time" id="friday" value="friday">Пт</button>
-                                    <button class="swipe-time" id="saturday" value="saturday">Сб</button>
-                                    <button class="swipe-time" id="sunday" value="sunday">Вс</button>
+                                    <button class="anket-time" id="monday" value="monday">Пн</button>
+                                    <button class="anket-time" id="tuesday" value="tuesday">Вт</button>
+                                    <button class="anket-time" id="wednesday" value="wednesday">Ср</button>
+                                    <button class="anket-time" id="thursday" value="thursday">Чт</button>
+                                    <button class="anket-time" id="friday" value="friday">Пт</button>
+                                    <button class="anket-time" id="saturday" value="saturday">Сб</button>
+                                    <button class="anket-time" id="sunday" value="sunday">Вс</button>
 
                                 </div>
-                                <select name="select" class="swipe-time" style="background-color: #ffdf00; border: none; height: 60%; -moz-appearance: none;
+                                <select name="select" class="anket-time" style="background-color: #ffdf00; border: none; height: 60%; -moz-appearance: none;
                                 -webkit-appearance: none;">
                                     <!--Supplement an id here instead of using 'name'-->
                                     <option value="value1">Онлайн</option>
